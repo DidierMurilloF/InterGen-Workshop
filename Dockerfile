@@ -1,5 +1,5 @@
-# FROM rocker/binder:4.1.1
-FROM rstudio/r-base:4.1.1-focal
+FROM rocker/binder:4.1.1
+# FROM rstudio/r-base:4.1.1-focal
 
 # Copy repo into ${HOME}, make user own $HOME
 USER root
