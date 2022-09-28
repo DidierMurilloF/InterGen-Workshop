@@ -1,4 +1,4 @@
-FROM rocker/binder:4.1.1
+FROM rocker/binder:4.1.3
 # FROM rstudio/r-base:4.1.1-focal
 
 # Copy repo into ${HOME}, make user own $HOME
@@ -57,7 +57,7 @@ RUN Rscript -e 'install.packages("readr")'
 RUN Rscript -e 'install.packages("sommer")'
 RUN Rscript -e 'install.packages("colourpicker")'
 RUN Rscript -e 'install.packages("FielDHub")'
-RUN Rscript -e 'remotes::install_version("FielDHub",upgrade="never", version = "1.2.1")'
+# RUN Rscript -e 'remotes::install_version("FielDHub",upgrade="never", version = "1.2.1")'
 RUN Rscript -e 'remotes::install_github("AparicioJohan/MrBeanApp", dependencies = FALSE)' 
 RUN Rscript -e 'remotes::install_github("RinteRface/bs4Dash@aef2c3a02387e9cf0eabbeffd4104177ef463237")'
   
