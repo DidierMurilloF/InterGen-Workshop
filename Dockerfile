@@ -58,7 +58,7 @@ RUN Rscript -e 'install.packages("sommer")'
 RUN Rscript -e 'install.packages("colourpicker")'
 RUN Rscript -e 'remotes::install_github("RinteRface/bs4Dash@aef2c3a02387e9cf0eabbeffd4104177ef463237")'
 RUN Rscript -e 'remotes::install_github("DidierMurilloF/FielDHub")' 
-RUN Rscript -e 'remotes::install_github("AparicioJohan/MrBeanApp", dependencies = FALSE)' 
+RUN Rscript -e 'remotes::install_github("AparicioJohan/MrBeanApp")' 
   
 ## run any install.R script we find
 # RUN if [ -f install.R ]; then R --quiet -f install.R; fi
