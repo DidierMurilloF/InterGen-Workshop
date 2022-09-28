@@ -57,7 +57,8 @@ RUN Rscript -e 'remotes::install_version("readr",upgrade="never", version = "2.1
 RUN Rscript -e 'remotes::install_version("sommer",upgrade="never", version = "4.2.0")'
 RUN Rscript -e 'remotes::install_version("colourpicker",upgrade="never", version = "1.1.1")'
 RUN Rscript -e 'remotes::install_version("FielDHub",upgrade="never", version = "1.2.1")'
+RUN Rscript -e 'remotes::install_github("AparicioJohan/MrBeanApp", dependencies = FALSE)' 
 RUN Rscript -e 'remotes::install_github("RinteRface/bs4Dash@aef2c3a02387e9cf0eabbeffd4104177ef463237")'
   
 ## run any install.R script we find
-RUN if [ -f install.R ]; then R --quiet -f install.R; fi
+# RUN if [ -f install.R ]; then R --quiet -f install.R; fi
